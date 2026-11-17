@@ -1,7 +1,7 @@
 name: stock-watch
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 min (GitHub's minimum; runs can lag a few minutes)
+    - cron: "3-58/5 * * * *"   # every 5 min, offset from :00 to dodge peak load (GitHub's minimum; runs can lag a few minutes)
   workflow_dispatch: {}
 jobs:
   check:
